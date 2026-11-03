@@ -21,17 +21,21 @@ No printing and scanning needed.
 
 ## Download
 
-The program is a single, self-contained Windows `.exe`. **No Python, no installers, no additional apps or libraries are required.** Just download and run:
+**[⬇ Download PDF-Signer-By-Levan.exe](https://github.com/lbegeluri/PDF_Signer/raw/main/PDF-Signer-By-Levan.exe)** (about 51 MB)
 
-1. Go to the [**Releases**](https://github.com/lbegeluri/PDF_Signer/releases/latest) page and download `PDF-Signer-By-Levan.zip`.
-2. Extract it anywhere. It contains `PDF Signer By Levan.exe`, a sample `signature.png` and `sample.pdf`.
-3. Double-click the exe. Windows SmartScreen may warn about an unknown publisher the first time
+It is a single, self-contained Windows program. **No Python, no installers, no pip install and no additional apps or libraries are required.**
+
+1. Download the file above (or open it in the file list and click the download button).
+2. Double-click it. It starts right away. A sample signature is built in, so you can try it at once.
+3. Windows SmartScreen may warn about an unknown publisher the first time
    (More info → Run anyway), because the file is not code-signed.
+
+To test with a document, download [`samples/sample.pdf`](samples/sample.pdf).
 
 ## Quick start
 
 1. Put your signature on a transparent background as `signature.png` next to the program
-   (`PDF Signer By Levan.exe`, or `pdf_signer.py` if running from source).
+   (`PDF-Signer-By-Levan.exe`, or `pdf_signer.py` if running from source).
 2. Start the program and click **Open PDF**.
 3. Click on the page where the signature should go. Drag it to adjust.
 4. Optional: change the **Signature size** and **Tilt** sliders.
@@ -80,7 +84,7 @@ Signature files are looked up next to `pdf_signer.py`. If none is found, `sample
 build.bat
 ```
 
-The result is `dist\PDF Signer By Levan.exe`, a single file you can share.
+The result is `dist\PDF Signer By Levan.exe`, a single file you can share. (The ready-built copy in this repo is `PDF-Signer-By-Levan.exe`.)
 
 ### Tech
 

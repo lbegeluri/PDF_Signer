@@ -17,8 +17,8 @@ Place a signature image on a PDF without printing or scanning it.
 
 ## 1. Launch the program
 
-1. Extract the archive you received (or build the exe, see the [README](../README.md#build-the-exe)).
-2. Keep `PDF Signer By Levan.exe` and the signature file (`signature.png`) in the **same folder**.
+1. Download `PDF-Signer-By-Levan.exe` from the [README](../README.md#download).
+2. Optional: to use your own signature, put `signature.png` in the **same folder** as the exe. Without it, a built-in sample signature is used.
 3. Double-click the exe. No installation or extra software is needed.
 
 > **Windows warning:** if you see "Windows protected your PC", click **More info**, then **Run anyway**.
