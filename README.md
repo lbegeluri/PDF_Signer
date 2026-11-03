@@ -19,6 +19,15 @@ No printing and scanning needed.
 - The original file is never changed; the result is saved as a new `*_signed.pdf`
 - Ships as a single `.exe` with no installation and no Python needed
 
+## Download
+
+The program is a single, self-contained Windows `.exe`. **No Python, no installers, no additional apps or libraries are required.** Just download and run:
+
+1. Go to the [**Releases**](https://github.com/lbegeluri/PDF_Signer/releases/latest) page and download `PDF-Signer-By-Levan.zip`.
+2. Extract it anywhere. It contains `PDF Signer By Levan.exe`, a sample `signature.png` and `sample.pdf`.
+3. Double-click the exe. Windows SmartScreen may warn about an unknown publisher the first time
+   (More info → Run anyway), because the file is not code-signed.
+
 ## Quick start
 
 1. Put your signature on a transparent background as `signature.png` next to the program
@@ -50,7 +59,11 @@ The [`samples`](samples) folder contains a **fictional** `sample.pdf` and six fi
 signatures (`signature.png`, `signature1.png` ... `signature5.png`).
 Copy them next to the program to test. None of them belongs to a real person or company.
 
-## Run from source
+## For developers
+
+Everything below is only needed if you want to modify the code or build the exe yourself.
+
+### Run from source
 
 Requires Python 3.10+ on Windows (Tkinter included with the standard installer).
 
@@ -61,17 +74,15 @@ python pdf_signer.py
 
 Signature files are looked up next to `pdf_signer.py`. If none is found, `samples/signature.png` is used.
 
-## Build the .exe
+### Build the .exe
 
 ```bash
 build.bat
 ```
 
-The result is `dist\PDF Signer By Levan.exe`, a single file you can share. Windows SmartScreen may
-warn about an unknown publisher the first time (More info → Run anyway), because the file is not
-code-signed.
+The result is `dist\PDF Signer By Levan.exe`, a single file you can share.
 
-## Tech
+### Tech
 
 Python, Tkinter, [PyMuPDF](https://pymupdf.readthedocs.io/), Pillow, PyInstaller.
 The signature is pre-rotated and inserted as an overlay image at the chosen position
